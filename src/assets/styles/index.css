@@ -1,0 +1,255 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html,
+    body,
+    #root {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #root {
+        @apply bg-blue-400;
+    }
+
+    @font-face {
+        font-family: 'IBMPlexSans';
+        src: url('../fonts/IBMPlexSans-Regular.ttf') format('truetype');
+        font-display: swap;
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: 'IBMPlexSans';
+        src: url('../fonts/IBMPlexSans-Medium.ttf') format('truetype');
+        font-display: swap;
+        font-weight: 500;
+    }
+
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number']::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type='number'] {
+        appearance: textfield;
+        -moz-appearance: textfield;
+    }
+}
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+/* typography */
+@layer components {
+    .displayLargeR {
+        @apply font-IBMPlexSans;
+
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 72px;
+        letter-spacing: -0.02em;
+    }
+    .displayMediumR {
+        @apply font-IBMPlexSans;
+
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: 0.01em;
+    }
+    .displaySmallR {
+        @apply font-IBMPlexSans;
+
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .displayLargeM {
+        @apply font-IBMPlexSans;
+
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 72px;
+        letter-spacing: -0.02em;
+    }
+    .displayMediumM {
+        @apply font-IBMPlexSans;
+
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.01em;
+    }
+    .displaySmallM {
+        @apply font-IBMPlexSans;
+
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .headlineLargeR {
+        @apply font-IBMPlexSans;
+
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .headlineMediumR {
+        @apply font-IBMPlexSans;
+
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .headlineSmallR {
+        @apply font-IBMPlexSans;
+
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .headlineLargeM {
+        @apply font-IBMPlexSans;
+
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .headlineMediumM {
+        @apply font-IBMPlexSans;
+
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .headlineSmallM {
+        @apply font-IBMPlexSans;
+
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .bodyLargeR {
+        @apply font-IBMPlexSans;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+    }
+    .bodyMediumR {
+        @apply font-IBMPlexSans;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+    }
+    .bodySmallR {
+        @apply font-IBMPlexSans;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    }
+    .bodyLargeM {
+        @apply font-IBMPlexSans;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+    }
+    .bodyMediumM {
+        @apply font-IBMPlexSans;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+    }
+    .bodySmallM {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    }
+    .actionLargeR {
+        @apply font-IBMPlexSans;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.005em;
+    }
+    .actionMediumR {
+        @apply font-IBMPlexSans;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+    }
+    .actionSmallR {
+        @apply font-IBMPlexSans;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    }
+    .actionTinyR {
+        @apply font-IBMPlexSans;
+
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.04em;
+    }
+    .actionLargeM {
+        @apply font-IBMPlexSans;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.005em;
+    }
+    .actionMediumM {
+        @apply font-IBMPlexSans;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+    }
+    .actionSmallM {
+        @apply font-IBMPlexSans;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    }
+    .actionTinyM {
+        @apply font-IBMPlexSans;
+
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.04em;
+    }
+}
