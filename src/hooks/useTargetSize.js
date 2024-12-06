@@ -12,9 +12,11 @@ export const useTargetSize = () => {
 
     useLayoutEffect(() => {
         if (ref.current) {
+            const rect = ref.current.getBoundingClientRect();
+
             setInitialRect({
-                width: ref.current.getBoundingClientRect().width,
-                height: ref.current.getBoundingClientRect().height,
+                width: rect.width,
+                height: rect.height,
             });
         }
     }, []);

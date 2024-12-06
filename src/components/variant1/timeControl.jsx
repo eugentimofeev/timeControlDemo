@@ -27,7 +27,7 @@ export const TimeControl = ({
             <div
                 ref={scrollRef}
                 className={cn(
-                    'no-scrollbar h-16 touch-pan-y overflow-auto',
+                    'no-scrollbar h-16 touch-pan-y overflow-hidden',
                     className,
                 )}
                 {...timeControlEvents}

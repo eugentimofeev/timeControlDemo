@@ -30,7 +30,7 @@ export const TimeControl = ({
             <div className="relative">
                 <div
                     ref={scrollRef}
-                    className="no-scrollbar h-[100px] touch-pan-y overflow-auto pt-8"
+                    className="no-scrollbar h-[100px] touch-pan-y overflow-hidden pt-8"
                     {...timeControlEvents}
                 >
                     <div

@@ -59,18 +59,10 @@ export const useTimeControl = ({ dateSegment, width, timestamp, timeStep }) => {
         return estimateSizesRef.current;
     }, []);
 
-    const updateEstimateSizes = useCallback(() => {
-        estimateSizesRef.current = getTimeControlEstimateSizes({
-            dateSegment,
-            timeStep,
-        });
-    }, [dateSegment, timeStep]);
-
     return {
         scrollRef,
         virtualizer,
         getEstimateSizes,
-        updateEstimateSizes,
         timeStep,
     };
 };

@@ -58,13 +58,6 @@ export const useTimeControl = ({ dateSegment, width, timestamp }) => {
         return estimateSizesRef.current;
     }, []);
 
-    const updateEstimateSizes = useCallback(() => {
-        estimateSizesRef.current = getTimeControlEstimateSizes(
-            dateSegment,
-            zoomRef.current,
-        );
-    }, [dateSegment]);
-
     const updateZoom = (direction) => {
         const [MIN_ZOOM, MAX_ZOOM] = ZOOM_MINMAX;
 
@@ -114,7 +107,6 @@ export const useTimeControl = ({ dateSegment, width, timestamp }) => {
         virtualizer,
         count,
         getEstimateSizes,
-        updateEstimateSizes,
         updateZoom,
     };
 };
